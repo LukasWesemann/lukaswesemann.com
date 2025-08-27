@@ -16,8 +16,8 @@ export default function Home() {
               of AI builders with the mission to support 1000 Australian startups.
             </p>
             
-            {/* Little man image with contact links */}
-            <div className="pt-4 flex items-center justify-center space-x-6">
+            {/* Contact links */}
+            <div className="pt-4 flex items-center justify-center space-x-8">
               <a 
                 href="https://www.linkedin.com/in/lukaswesemann/" 
                 target="_blank" 
@@ -26,16 +26,6 @@ export default function Home() {
               >
                 LinkedIn
               </a>
-              
-              <Image
-                src="/littleman.png"
-                alt="Little man illustration"
-                width={48}
-                height={48}
-                quality={100}
-                priority
-                className="rounded-sm"
-              />
               
               <a 
                 href="https://scholar.google.com/citations?user=v3U1mngAAAAJ" 
