@@ -25,11 +25,16 @@ export const metadata: Metadata = {
   keywords: ["AI Researcher", "Machine Learning", "MLAI", "Maincode", "Australia", "Lukas Wesemann"],
   authors: [{ name: "Lukas Wesemann" }],
   viewport: "width=device-width, initial-scale=1, viewport-fit=cover",
-  themeColor: "#fef7f0",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fef7f0" },
+    { media: "(prefers-color-scheme: dark)", color: "#fef7f0" },
+  ],
   other: {
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "default",
+    "apple-mobile-web-app-title": "Lukas Wesemann",
   },
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({

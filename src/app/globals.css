@@ -5,11 +5,42 @@
   font-family: var(--font-crimson-text), Georgia, 'Times New Roman', Times, serif;
 }
 
-/* iOS Safari safe area support */
+/* iOS Safari status bar and safe area fixes */
+:root {
+  --bg-color: #fef7f0; /* amber-50 */
+}
+
+html {
+  background-color: var(--bg-color);
+  /* Ensure background extends to status bar area */
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
 body {
-  background-color: #fef7f0; /* amber-50 background to match website */
+  background-color: var(--bg-color);
+  /* iOS safe area support */
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
+  
+  /* Ensure proper height for iOS */
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Additional iOS Safari status bar fix */
+@supports (-webkit-touch-callout: none) {
+  /* iOS-specific styles */
+  html {
+    background: var(--bg-color);
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  
+  body {
+    background: var(--bg-color);
+    min-height: -webkit-fill-available;
+  }
 }
