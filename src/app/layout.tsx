@@ -24,7 +24,12 @@ export const metadata: Metadata = {
   description: "AI Researcher at Maincode building sovereign foundation models. Co-founder of MLAI, Australia's largest community of AI builders.",
   keywords: ["AI Researcher", "Machine Learning", "MLAI", "Maincode", "Australia", "Lukas Wesemann"],
   authors: [{ name: "Lukas Wesemann" }],
-  viewport: "width=device-width, initial-scale=1",
+  viewport: "width=device-width, initial-scale=1, viewport-fit=cover",
+  themeColor: "#fef7f0",
+  other: {
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "default",
+  },
 };
 
 export default function RootLayout({

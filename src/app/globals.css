@@ -4,3 +4,12 @@
 .font-serif {
   font-family: var(--font-crimson-text), Georgia, 'Times New Roman', Times, serif;
 }
+
+/* iOS Safari safe area support */
+body {
+  background-color: #fef7f0; /* amber-50 background to match website */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
