@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-amber-50 flex items-center justify-center px-6 py-12">
+    <main className="min-h-screen bg-amber-50 flex items-center justify-center px-6 py-16 md:py-12">
       <div className="max-w-2xl w-full">
         <div className="text-center space-y-8">
           {/* Header */}
@@ -18,7 +18,7 @@ export default function Home() {
           {/* Portfolio Items */}
           <div className="space-y-6 pt-8">
             <div className="space-y-4">
-              <div className="text-left max-w-md mx-auto">
+              <div className="text-left max-w-md mx-auto pl-4 md:pl-0">
                 <h3 className="font-serif text-gray-800 font-medium text-lg">
                   <a 
                     href="https://www.maincode.com/" 
@@ -41,7 +41,7 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="text-left max-w-md mx-auto">
+              <div className="text-left max-w-md mx-auto pl-4 md:pl-0">
                 <h3 className="font-serif text-gray-800 font-medium text-lg">
                   <a 
                     href="https://mlai.au/" 
@@ -64,14 +64,14 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="text-left max-w-md mx-auto">
+              <div className="text-left max-w-md mx-auto pl-4 md:pl-0">
                 <h3 className="font-serif text-gray-800 font-medium text-lg">
                   University of Melbourne - Postdoc, Nanotechnology
                 </h3>
                 <p className="text-gray-600 font-serif">2021 - 2025</p>
               </div>
 
-              <div className="text-left max-w-md mx-auto">
+              <div className="text-left max-w-md mx-auto pl-4 md:pl-0">
                 <h3 className="font-serif text-gray-800 font-medium text-lg">
                   University of Melbourne - PhD Physics
                 </h3>
