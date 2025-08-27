@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-amber-50 flex items-center justify-center px-6 py-20 md:py-12">
+    <main className="min-h-screen min-h-[100dvh] bg-amber-50 flex items-center justify-center px-6 py-20 md:py-12">
       <div className="max-w-2xl w-full">
-        <div className="text-center space-y-8">
+        <div className="text-center space-y-8 pt-safe">
           {/* Header */}
           <div className="space-y-2">
             <h1 className="text-4xl md:text-5xl font-serif text-gray-800 mb-4">

@@ -10,37 +10,61 @@
   --bg-color: #fef7f0; /* amber-50 */
 }
 
+/* Custom safe area classes */
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
 html {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color) !important;
+  background: var(--bg-color) !important;
   /* Ensure background extends to status bar area */
   min-height: 100vh;
   min-height: 100dvh;
 }
 
 body {
-  background-color: var(--bg-color);
-  /* iOS safe area support */
-  padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
+  background-color: var(--bg-color) !important;
+  background: var(--bg-color) !important;
   
   /* Ensure proper height for iOS */
   min-height: 100vh;
   min-height: 100dvh;
+  min-height: -webkit-fill-available;
 }
 
-/* Additional iOS Safari status bar fix */
+/* Force background color on all elements that might interfere */
+main {
+  background-color: var(--bg-color) !important;
+}
+
+/* Additional iOS Safari status bar fix with more aggressive approach */
 @supports (-webkit-touch-callout: none) {
   /* iOS-specific styles */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
   html {
-    background: var(--bg-color);
+    background: var(--bg-color) !important;
     -webkit-background-size: cover;
     background-size: cover;
   }
   
   body {
-    background: var(--bg-color);
+    background: var(--bg-color) !important;
     min-height: -webkit-fill-available;
+  }
+  
+  /* Force the main content to extend into status bar area */
+  main {
+    min-height: 100vh;
+    min-height: 100dvh;
+    min-height: -webkit-fill-available;
+    background: var(--bg-color) !important;
   }
 }

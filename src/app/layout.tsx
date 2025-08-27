@@ -25,14 +25,15 @@ export const metadata: Metadata = {
   keywords: ["AI Researcher", "Machine Learning", "MLAI", "Maincode", "Australia", "Lukas Wesemann"],
   authors: [{ name: "Lukas Wesemann" }],
   viewport: "width=device-width, initial-scale=1, viewport-fit=cover",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#fef7f0" },
-    { media: "(prefers-color-scheme: dark)", color: "#fef7f0" },
-  ],
+  themeColor: "#fef7f0",
   other: {
     "apple-mobile-web-app-capable": "yes",
-    "apple-mobile-web-app-status-bar-style": "default",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
     "apple-mobile-web-app-title": "Lukas Wesemann",
+    "mobile-web-app-capable": "yes",
+    "application-name": "Lukas Wesemann",
+    "msapplication-TileColor": "#fef7f0",
+    "msapplication-navbutton-color": "#fef7f0",
   },
   manifest: "/manifest.json",
 };
@@ -43,9 +44,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" style={{ backgroundColor: '#fef7f0' }}>
+      <head>
+        <meta name="theme-color" content="#fef7f0" />
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            html, body { 
+              background-color: #fef7f0 !important; 
+              background: #fef7f0 !important;
+            }
+            * { 
+              -webkit-tap-highlight-color: transparent; 
+            }
+          `
+        }} />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${crimsonText.variable} antialiased`}
+        style={{ backgroundColor: '#fef7f0' }}
       >
         {children}
       </body>
