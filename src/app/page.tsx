@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="min-h-screen min-h-[100dvh] bg-amber-50 flex items-center justify-center px-6 py-12 md:py-12">
@@ -5,7 +7,7 @@ export default function Home() {
         <div className="text-center space-y-8 pt-safe">
           {/* Header */}
           <div className="space-y-2">
-            <h1 className="text-4xl md:text-5xl font-serif text-gray-800 mb-4">
+            <h1 className="text-4xl md:text-5xl font-serif text-gray-800 mb-6">
               Lukas Wesemann, PhD
             </h1>
             <p className="text-lg md:text-xl font-serif text-gray-700 leading-relaxed max-w-2xl mx-auto">
@@ -13,10 +15,41 @@ export default function Home() {
               I've also co-founded the not-for-profit MLAI, Australia's largest community 
               of AI builders with the mission to support 1000 Australian startups.
             </p>
+            
+            {/* Little man image with contact links */}
+            <div className="pt-4 flex items-center justify-center space-x-6">
+              <a 
+                href="https://www.linkedin.com/in/lukaswesemann/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-serif text-gray-700 hover:text-gray-600 transition-colors underline decoration-gray-300 underline-offset-2 hover:decoration-gray-500"
+              >
+                LinkedIn
+              </a>
+              
+              <Image
+                src="/littleman.png"
+                alt="Little man illustration"
+                width={48}
+                height={48}
+                quality={100}
+                priority
+                className="rounded-sm"
+              />
+              
+              <a 
+                href="https://scholar.google.com/citations?user=v3U1mngAAAAJ" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-serif text-gray-700 hover:text-gray-600 transition-colors underline decoration-gray-300 underline-offset-2 hover:decoration-gray-500"
+              >
+                Google Scholar
+              </a>
+            </div>
           </div>
 
           {/* Portfolio Items */}
-          <div className="space-y-6 pt-8">
+          <div className="space-y-6 pt-4">
             <div className="space-y-4">
               <div className="text-left max-w-md mx-auto pl-4 md:pl-0">
                 <h3 className="font-serif text-gray-800 font-medium text-lg">
@@ -78,26 +111,6 @@ export default function Home() {
                 <p className="text-gray-600 font-serif">2017 - 2020</p>
               </div>
             </div>
-          </div>
-
-          {/* Contact - horizontal arrangement */}
-          <div className="pt-8 flex justify-center space-x-8">
-            <a 
-              href="https://www.linkedin.com/in/lukaswesemann/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="font-serif text-gray-700 hover:text-gray-600 transition-colors underline decoration-gray-300 underline-offset-2 hover:decoration-gray-500"
-            >
-              LinkedIn
-            </a>
-            <a 
-              href="https://scholar.google.com/citations?user=v3U1mngAAAAJ" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="font-serif text-gray-700 hover:text-gray-600 transition-colors underline decoration-gray-300 underline-offset-2 hover:decoration-gray-500"
-            >
-              Google Scholar
-            </a>
           </div>
         </div>
       </div>
