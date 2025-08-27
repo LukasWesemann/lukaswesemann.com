@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Configure serif font family using CSS variable */
+.font-serif {
+  font-family: var(--font-crimson-text), Georgia, 'Times New Roman', Times, serif;
+}
