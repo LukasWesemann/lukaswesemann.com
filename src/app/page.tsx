@@ -35,6 +35,13 @@ export default function Home() {
               >
                 Google Scholar
               </a>
+              
+              <a 
+                href="/essays"
+                className="font-serif text-gray-700 hover:text-gray-600 transition-colors underline decoration-gray-300 underline-offset-2 hover:decoration-gray-500"
+              >
+                Essays
+              </a>
             </div>
           </div>
 
