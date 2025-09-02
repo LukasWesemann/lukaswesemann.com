@@ -8,7 +8,7 @@ interface EssayProps {
 export default function Essay({ 
   title, 
   date, 
-  author = "Dr. Lukas Wesemann",
+  author = "Lukas Wesemann",
   children 
 }: EssayProps) {
   return (

@@ -1,20 +1,20 @@
 export default function EssaysOverview() {
-  const essays = [
-    {
-      title: "The Future of Foundation Models",
-      date: "December 15, 2024",
-      slug: "future-of-foundation-models"
-    },
-    {
-      title: "Building AI Communities in Australia",
-      date: "November 28, 2024",
-      slug: "building-ai-communities-australia"
-    },
-    {
-      title: "From Physics to AI: A Research Journey",
-      date: "October 12, 2024",
-      slug: "from-physics-to-ai-research-journey"
-    }
+  const essays: { title: string; date: string; slug: string }[] = [
+    // {
+    //   title: "The Future of Foundation Models",
+    //   date: "December 15, 2024",
+    //   slug: "future-of-foundation-models"
+    // },
+    // {
+    //   title: "Building AI Communities in Australia",
+    //   date: "November 28, 2024",
+    //   slug: "building-ai-communities-australia"
+    // },
+    // {
+    //   title: "From Physics to AI: A Research Journey",
+    //   date: "October 12, 2024",
+    //   slug: "from-physics-to-ai-research-journey"
+    // }
     // Add more essays here as they're created
   ];
 
@@ -28,7 +28,7 @@ export default function EssaysOverview() {
               Essays
             </h1>
             <p className="text-lg md:text-xl font-serif text-gray-700 leading-relaxed max-w-2xl mx-auto">
-              A collection of my notes.
+              A collection of my notes (soon).
             </p>
           </div>
 
