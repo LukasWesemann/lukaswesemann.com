@@ -1,5 +1,10 @@
 export default function EssaysOverview() {
   const essays: { title: string; date: string; slug: string }[] = [
+    {
+      title: "Statistical outliers matter most",
+      date: "December 19, 2024",
+      slug: "statistical-outliers-matter-most"
+    },
     // {
     //   title: "The Future of Foundation Models",
     //   date: "December 15, 2024",
@@ -28,7 +33,7 @@ export default function EssaysOverview() {
               Essays
             </h1>
             <p className="text-lg md:text-xl font-serif text-gray-700 leading-relaxed max-w-2xl mx-auto">
-              A collection of my notes (soon).
+              A collection of my notes.
             </p>
           </div>
 
