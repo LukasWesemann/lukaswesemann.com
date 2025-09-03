@@ -1,9 +1,9 @@
 export default function EssaysOverview() {
   const essays: { title: string; date: string; slug: string }[] = [
     {
-      title: "Statistical outliers matter most",
-      date: "December 19, 2024",
-      slug: "statistical-outliers-matter-most"
+      title: "Outliers matter most",
+      date: "September 2, 2025",
+      slug: "outliers-matter-most"
     },
     // {
     //   title: "The Future of Foundation Models",
