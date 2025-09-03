@@ -7,7 +7,7 @@ export default function StatisticalOutliersMatterMost() {
       date="September 2, 2025"
     >
       <p className="text-gray-700 font-serif leading-relaxed text-xl">
-        Many important objectives in life are achieved by repeatedly sampling from a partly unknown probability distribution over possible outcomes. We want to find an apartment, so we go to many differet inspections. While we have some feeling for which ones are promising and which ones aren't, the uncertainty is large. So we try repeatedly until we find an apartment that we actually like. The same goes for finding a romantic partner or a great deal for a second hand car and so on.
+        Many important objectives in life are achieved by repeatedly sampling from a partly unknown probability distribution over possible outcomes. We want to find an apartment, so we go to many differet inspections. While we have some feeling for which ones are promising and which ones aren't, the distribution evolvoes over time and the uncertainty is large. So we try repeatedly until we find an apartment that we actually like. The same goes for finding a romantic partner or a great deal for a second hand car and so on.
       </p>
 
       <p className="text-gray-700 font-serif leading-relaxed text-xl">
