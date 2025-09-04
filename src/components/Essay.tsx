@@ -1,8 +1,41 @@
+import type { Metadata } from "next";
+
 interface EssayProps {
   title: string;
   date: string;
   author?: string;
   children: React.ReactNode;
+}
+
+// Utility function to generate metadata for essays
+export function generateEssayMetadata({
+  title,
+  description,
+  date,
+  author = "Lukas Wesemann"
+}: {
+  title: string;
+  description: string;
+  date: string;
+  author?: string;
+}): Metadata {
+  return {
+    title: `${title} - ${author}`,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      publishedTime: date,
+      authors: [author],
+      siteName: "Lukas Wesemann",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    }
+  };
 }
 
 export default function Essay({ 

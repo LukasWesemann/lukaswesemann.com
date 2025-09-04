@@ -1,4 +1,10 @@
-import Essay from "@/components/Essay";
+import Essay, { generateEssayMetadata } from "@/components/Essay";
+
+export const metadata = generateEssayMetadata({
+  title: "Outliers matter most",
+  description: "Many important objectives in life are achieved by repeatedly sampling from a partly unknown probability distribution over possible outcomes. Real success comes from hitting statistical outliers, the rare long-tail opportunities.",
+  date: "2025-09-02",
+});
 
 export default function StatisticalOutliersMatterMost() {
   return (
