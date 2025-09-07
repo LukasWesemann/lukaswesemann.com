@@ -1,7 +1,7 @@
 import Essay, { generateEssayMetadata } from "@/components/Essay";
 
 export const metadata = generateEssayMetadata({
-  title: "What MLAI is for me",
+  title: "What MLAI is to me",
   description: "Reflecting on the mission, values, and future of MLAI as a not-for-profit organization bringing together the Australian AI scene.",
   date: "2025-09-06",
 });
@@ -9,7 +9,7 @@ export const metadata = generateEssayMetadata({
 export default function WhatMLAIIsForMe() {
   return (
     <Essay 
-      title="What MLAI is for me"
+      title="What MLAI is to me"
       date="September 6, 2025"
     >
       <p className="text-gray-700 font-serif leading-relaxed text-xl">
