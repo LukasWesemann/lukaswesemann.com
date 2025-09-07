@@ -1,6 +1,11 @@
 export default function EssaysOverview() {
   const essays: { title: string; date: string; slug: string }[] = [
     {
+      title: "What MLAI is for me",
+      date: "September 6, 2025",
+      slug: "what-mlai-is-for-me"
+    },
+    {
       title: "Outliers matter most",
       date: "September 2, 2025",
       slug: "outliers-matter-most"
