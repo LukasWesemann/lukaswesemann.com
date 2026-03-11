@@ -3,17 +3,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen min-h-[100dvh] bg-amber-50 flex items-center justify-center px-6 py-12 md:py-12">
-      <div className="max-w-2xl w-full">
+      <div className="max-w-xl w-full">
         <div className="text-center space-y-8 pt-safe">
           {/* Header */}
           <div className="space-y-2">
             <h1 className="text-4xl md:text-5xl font-serif text-gray-800 mb-6">
               Lukas Wesemann, PhD
             </h1>
-            <p className="text-lg md:text-xl font-serif text-gray-700 leading-relaxed max-w-2xl mx-auto">
-              Hi, I'm an AI Researcher at Maincode building sovereign foundation models. 
-              I've also co-founded the not-for-profit MLAI, Australia's largest community 
-              of AI builders with the mission to support 1000 Australian startups.
+            <p className="text-lg md:text-xl font-serif text-gray-700 leading-relaxed max-w-3xl mx-auto text-justify">
+              Hi, I build AI - the models and the products. In academia, I researched nanotechnology to make AI faster. In industry, I helped train Australia's first LLMs (Matilda and Maincoder) and led the first live agentic payment transaction with Mastercard in Asia Pacific. Across both, I've spent 10+ years leading research and product teams at the frontier. Outside the lab, I co-founded MLAI, Australia's largest AI startup community.
             </p>
             
             {/* Contact links */}
