@@ -79,7 +79,7 @@ export default function Home() {
                   </a>
                   {" "}- Co-founder
                 </h3>
-                <p className="text-gray-600 font-serif">since January 2023</p>
+                <p className="text-gray-600 font-serif">2023 - 2026</p>
                 <a 
                   href="https://mlai.au/" 
                   target="_blank" 
