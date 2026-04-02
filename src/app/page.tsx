@@ -9,7 +9,7 @@ export default function Home() {
               Lukas Wesemann, PhD
             </h1>
             <p className="text-lg md:text-xl font-serif text-gray-700 leading-relaxed max-w-3xl mx-auto text-justify">
-              Hi, I build AI - the models and the products. In academia, I researched nanotechnology to make AI faster. In industry, I helped train Australia's first LLMs (Matilda and Maincoder) and led the first live agentic payment transaction with Mastercard in Asia Pacific. Across both, I've spent 10+ years leading research and product teams at the frontier. Outside the lab, I co-founded MLAI, Australia's largest AI startup community.
+              Hi, I build AI - the models, the products and the teams. In academia, I researched nanotechnology to make AI faster. In industry, I helped train Australia's first LLMs (Matilda and Maincoder) and led the first live agentic payment transaction in Asia Pacific in collaboration with Mastercard. Across both, I've spent 10+ years leading research and product teams at the frontier. What I love most about that work is the people layer: mentoring researchers, shaping team direction, and making the hard calls about what's worth pursuing. Outside the lab, I co-founded MLAI, now Australia's largest AI startup community.
             </p>
             
             {/* Contact links */}
@@ -46,6 +46,13 @@ export default function Home() {
             <div className="space-y-4">
               <div className="text-left max-w-md mx-auto pl-4 md:pl-0">
                 <h3 className="font-serif text-gray-800 font-medium text-lg">
+                  Exploration
+                </h3>
+                <p className="text-gray-600 font-serif">April 2026 - present</p>
+              </div>
+
+              <div className="text-left max-w-md mx-auto pl-4 md:pl-0">
+                <h3 className="font-serif text-gray-800 font-medium text-lg">
                   <a 
                     href="https://www.maincode.com/" 
                     target="_blank" 
@@ -54,9 +61,9 @@ export default function Home() {
                   >
                     Maincode
                   </a>
-                  {" "}- AI Researcher
+                  {" "}- Research Product Manager
                 </h3>
-                <p className="text-gray-600 font-serif">since April 2025</p>
+                <p className="text-gray-600 font-serif">March 2025 - March 2026</p>
                 <a 
                   href="https://www.maincode.com/" 
                   target="_blank" 
